@@ -16,6 +16,10 @@
 		A50242131AFC4F6B00313557 /* BookChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50242121AFC4F6B00313557 /* BookChainTests.m */; };
 		A502421F1AFC52A500313557 /* LeonardosSketchBook.png in Resources */ = {isa = PBXBuildFile; fileRef = A502421E1AFC52A500313557 /* LeonardosSketchBook.png */; };
 		A50242211AFC537C00313557 /* flogin.png in Resources */ = {isa = PBXBuildFile; fileRef = A50242201AFC537C00313557 /* flogin.png */; };
+		A519D8091AFD217600435B44 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A519D8081AFD217600435B44 /* HomeViewController.m */; };
+		A519D80C1AFD230700435B44 /* book_icon_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A519D80B1AFD230700435B44 /* book_icon_sm.png */; };
+		A519D80E1AFD242200435B44 /* building_icon_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A519D80D1AFD242200435B44 /* building_icon_sm.png */; };
+		A519D8101AFD249A00435B44 /* user_icon_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A519D80F1AFD249A00435B44 /* user_icon_sm.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		A50242121AFC4F6B00313557 /* BookChainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookChainTests.m; sourceTree = "<group>"; };
 		A502421E1AFC52A500313557 /* LeonardosSketchBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeonardosSketchBook.png; sourceTree = "<group>"; };
 		A50242201AFC537C00313557 /* flogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flogin.png; sourceTree = "<group>"; };
+		A519D8071AFD217600435B44 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A519D8081AFD217600435B44 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A519D80B1AFD230700435B44 /* book_icon_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_icon_sm.png; sourceTree = "<group>"; };
+		A519D80D1AFD242200435B44 /* building_icon_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building_icon_sm.png; sourceTree = "<group>"; };
+		A519D80F1AFD249A00435B44 /* user_icon_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon_sm.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,9 @@
 				A50241F41AFC4F6B00313557 /* Products */,
 				A502421E1AFC52A500313557 /* LeonardosSketchBook.png */,
 				A50242201AFC537C00313557 /* flogin.png */,
+				A519D80B1AFD230700435B44 /* book_icon_sm.png */,
+				A519D80D1AFD242200435B44 /* building_icon_sm.png */,
+				A519D80F1AFD249A00435B44 /* user_icon_sm.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,9 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A50241FA1AFC4F6B00313557 /* AppDelegate.h */,
-				A50241FB1AFC4F6B00313557 /* AppDelegate.m */,
-				A50241FD1AFC4F6B00313557 /* ViewController.h */,
-				A50241FE1AFC4F6B00313557 /* ViewController.m */,
+				A519D80A1AFD217B00435B44 /* Controllers */,
 				A50242001AFC4F6B00313557 /* Main.storyboard */,
 				A50242031AFC4F6B00313557 /* Images.xcassets */,
 				A50242051AFC4F6B00313557 /* LaunchScreen.xib */,
@@ -123,6 +133,18 @@
 				A50242111AFC4F6B00313557 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A519D80A1AFD217B00435B44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A50241FB1AFC4F6B00313557 /* AppDelegate.m */,
+				A50241FD1AFC4F6B00313557 /* ViewController.h */,
+				A519D8071AFD217600435B44 /* HomeViewController.h */,
+				A519D8081AFD217600435B44 /* HomeViewController.m */,
+				A50241FE1AFC4F6B00313557 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +228,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50242021AFC4F6B00313557 /* Main.storyboard in Resources */,
+				A519D8101AFD249A00435B44 /* user_icon_sm.png in Resources */,
+				A519D80C1AFD230700435B44 /* book_icon_sm.png in Resources */,
 				A502421F1AFC52A500313557 /* LeonardosSketchBook.png in Resources */,
 				A50242071AFC4F6B00313557 /* LaunchScreen.xib in Resources */,
 				A50242211AFC537C00313557 /* flogin.png in Resources */,
 				A50242041AFC4F6B00313557 /* Images.xcassets in Resources */,
+				A519D80E1AFD242200435B44 /* building_icon_sm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +255,7 @@
 				A50241FF1AFC4F6B00313557 /* ViewController.m in Sources */,
 				A50241FC1AFC4F6B00313557 /* AppDelegate.m in Sources */,
 				A50241F91AFC4F6B00313557 /* main.m in Sources */,
+				A519D8091AFD217600435B44 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +450,7 @@
 				A50242181AFC4F6B00313557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50242191AFC4F6B00313557 /* Build configuration list for PBXNativeTarget "BookChainTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +459,7 @@
 				A502421B1AFC4F6B00313557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
