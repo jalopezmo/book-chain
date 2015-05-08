@@ -30,6 +30,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Book Chain desea ubicar los centros culturales cercanos a ti.</string>
+	<key>NSLocationWhenUsageDescription</key>
+	<string>En este momento todavía estamos buscando su ubicación.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
