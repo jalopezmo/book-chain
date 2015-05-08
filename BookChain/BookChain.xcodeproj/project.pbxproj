@@ -24,6 +24,7 @@
 		A542DC8C1AFD291B00E585E4 /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A542DC8B1AFD291B00E585E4 /* MyPoint.m */; };
 		A542DC8E1AFD293000E585E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A542DC8D1AFD293000E585E4 /* CoreLocation.framework */; };
 		A542DC901AFD293400E585E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A542DC8F1AFD293400E585E4 /* MapKit.framework */; };
+		A542DC921AFD36A400E585E4 /* default-user.png in Resources */ = {isa = PBXBuildFile; fileRef = A542DC911AFD36A400E585E4 /* default-user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A542DC8B1AFD291B00E585E4 /* MyPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
 		A542DC8D1AFD293000E585E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A542DC8F1AFD293400E585E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A542DC911AFD36A400E585E4 /* default-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-user.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				A519D80B1AFD230700435B44 /* book_icon_sm.png */,
 				A519D80D1AFD242200435B44 /* building_icon_sm.png */,
 				A519D80F1AFD249A00435B44 /* user_icon_sm.png */,
+				A542DC911AFD36A400E585E4 /* default-user.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +258,7 @@
 			files = (
 				A50242021AFC4F6B00313557 /* Main.storyboard in Resources */,
 				A519D8101AFD249A00435B44 /* user_icon_sm.png in Resources */,
+				A542DC921AFD36A400E585E4 /* default-user.png in Resources */,
 				A519D80C1AFD230700435B44 /* book_icon_sm.png in Resources */,
 				A502421F1AFC52A500313557 /* LeonardosSketchBook.png in Resources */,
 				A50242071AFC4F6B00313557 /* LaunchScreen.xib in Resources */,
