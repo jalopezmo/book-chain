@@ -14,6 +14,8 @@
 		A50242041AFC4F6B00313557 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50242031AFC4F6B00313557 /* Images.xcassets */; };
 		A50242071AFC4F6B00313557 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50242051AFC4F6B00313557 /* LaunchScreen.xib */; };
 		A50242131AFC4F6B00313557 /* BookChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50242121AFC4F6B00313557 /* BookChainTests.m */; };
+		A502421F1AFC52A500313557 /* LeonardosSketchBook.png in Resources */ = {isa = PBXBuildFile; fileRef = A502421E1AFC52A500313557 /* LeonardosSketchBook.png */; };
+		A50242211AFC537C00313557 /* flogin.png in Resources */ = {isa = PBXBuildFile; fileRef = A50242201AFC537C00313557 /* flogin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		A502420C1AFC4F6B00313557 /* BookChainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookChainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50242111AFC4F6B00313557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50242121AFC4F6B00313557 /* BookChainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookChainTests.m; sourceTree = "<group>"; };
+		A502421E1AFC52A500313557 /* LeonardosSketchBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeonardosSketchBook.png; sourceTree = "<group>"; };
+		A50242201AFC537C00313557 /* flogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flogin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				A50241F51AFC4F6B00313557 /* BookChain */,
 				A502420F1AFC4F6B00313557 /* BookChainTests */,
 				A50241F41AFC4F6B00313557 /* Products */,
+				A502421E1AFC52A500313557 /* LeonardosSketchBook.png */,
+				A50242201AFC537C00313557 /* flogin.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50242021AFC4F6B00313557 /* Main.storyboard in Resources */,
+				A502421F1AFC52A500313557 /* LeonardosSketchBook.png in Resources */,
 				A50242071AFC4F6B00313557 /* LaunchScreen.xib in Resources */,
+				A50242211AFC537C00313557 /* flogin.png in Resources */,
 				A50242041AFC4F6B00313557 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
