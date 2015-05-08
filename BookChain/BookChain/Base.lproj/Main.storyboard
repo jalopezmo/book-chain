@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nRq-UU-6Xb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Landing-->
@@ -180,7 +181,7 @@
         <!--Places-->
         <scene sceneID="r9y-9O-ezY">
             <objects>
-                <viewController title="Places" id="lt3-ea-G5D" sceneMemberID="viewController">
+                <viewController title="Places" id="lt3-ea-G5D" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gA8-U3-oP4"/>
                         <viewControllerLayoutGuide type="bottom" id="hB0-Z3-Fed"/>
@@ -189,13 +190,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bqG-ha-D1f">
-                                <rect key="frame" x="77" y="86" width="446" height="457"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bqG-ha-D1f">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hB0-Z3-Fed" firstAttribute="top" secondItem="bqG-ha-D1f" secondAttribute="bottom" id="879-Dr-j1I"/>
+                            <constraint firstItem="bqG-ha-D1f" firstAttribute="leading" secondItem="EE4-pH-m6A" secondAttribute="leadingMargin" constant="-16" id="YKI-Z3-D7n"/>
+                            <constraint firstItem="bqG-ha-D1f" firstAttribute="top" secondItem="gA8-U3-oP4" secondAttribute="bottom" id="eti-ZG-hLF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bqG-ha-D1f" secondAttribute="trailing" constant="-16" id="g62-u9-Dak"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Establecimientos" image="building_icon_sm.png" id="iR9-oE-Kr6"/>
+                    <connections>
+                        <outlet property="myMap" destination="bqG-ha-D1f" id="8UB-el-fS8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fst-mU-2mP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

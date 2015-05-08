@@ -20,6 +20,10 @@
 		A519D80C1AFD230700435B44 /* book_icon_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A519D80B1AFD230700435B44 /* book_icon_sm.png */; };
 		A519D80E1AFD242200435B44 /* building_icon_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A519D80D1AFD242200435B44 /* building_icon_sm.png */; };
 		A519D8101AFD249A00435B44 /* user_icon_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = A519D80F1AFD249A00435B44 /* user_icon_sm.png */; };
+		A542DC881AFD28EE00E585E4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A542DC871AFD28EE00E585E4 /* MapViewController.m */; };
+		A542DC8C1AFD291B00E585E4 /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A542DC8B1AFD291B00E585E4 /* MyPoint.m */; };
+		A542DC8E1AFD293000E585E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A542DC8D1AFD293000E585E4 /* CoreLocation.framework */; };
+		A542DC901AFD293400E585E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A542DC8F1AFD293400E585E4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		A519D80B1AFD230700435B44 /* book_icon_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_icon_sm.png; sourceTree = "<group>"; };
 		A519D80D1AFD242200435B44 /* building_icon_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building_icon_sm.png; sourceTree = "<group>"; };
 		A519D80F1AFD249A00435B44 /* user_icon_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon_sm.png; sourceTree = "<group>"; };
+		A542DC861AFD28EE00E585E4 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A542DC871AFD28EE00E585E4 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		A542DC8A1AFD291B00E585E4 /* MyPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPoint.h; sourceTree = "<group>"; };
+		A542DC8B1AFD291B00E585E4 /* MyPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
+		A542DC8D1AFD293000E585E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A542DC8F1AFD293400E585E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A542DC901AFD293400E585E4 /* MapKit.framework in Frameworks */,
+				A542DC8E1AFD293000E585E4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,8 @@
 		A50241EA1AFC4F6B00313557 = {
 			isa = PBXGroup;
 			children = (
+				A542DC8F1AFD293400E585E4 /* MapKit.framework */,
+				A542DC8D1AFD293000E585E4 /* CoreLocation.framework */,
 				A50241F51AFC4F6B00313557 /* BookChain */,
 				A502420F1AFC4F6B00313557 /* BookChainTests */,
 				A50241F41AFC4F6B00313557 /* Products */,
@@ -100,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				A50241FA1AFC4F6B00313557 /* AppDelegate.h */,
+				A50241FB1AFC4F6B00313557 /* AppDelegate.m */,
+				A542DC891AFD290400E585E4 /* Models */,
 				A519D80A1AFD217B00435B44 /* Controllers */,
 				A50242001AFC4F6B00313557 /* Main.storyboard */,
 				A50242031AFC4F6B00313557 /* Images.xcassets */,
@@ -138,13 +154,23 @@
 		A519D80A1AFD217B00435B44 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A50241FB1AFC4F6B00313557 /* AppDelegate.m */,
 				A50241FD1AFC4F6B00313557 /* ViewController.h */,
+				A50241FE1AFC4F6B00313557 /* ViewController.m */,
 				A519D8071AFD217600435B44 /* HomeViewController.h */,
 				A519D8081AFD217600435B44 /* HomeViewController.m */,
-				A50241FE1AFC4F6B00313557 /* ViewController.m */,
+				A542DC861AFD28EE00E585E4 /* MapViewController.h */,
+				A542DC871AFD28EE00E585E4 /* MapViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A542DC891AFD290400E585E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A542DC8A1AFD291B00E585E4 /* MyPoint.h */,
+				A542DC8B1AFD291B00E585E4 /* MyPoint.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A542DC8C1AFD291B00E585E4 /* MyPoint.m in Sources */,
 				A50241FF1AFC4F6B00313557 /* ViewController.m in Sources */,
 				A50241FC1AFC4F6B00313557 /* AppDelegate.m in Sources */,
+				A542DC881AFD28EE00E585E4 /* MapViewController.m in Sources */,
 				A50241F91AFC4F6B00313557 /* main.m in Sources */,
 				A519D8091AFD217600435B44 /* HomeViewController.m in Sources */,
 			);
